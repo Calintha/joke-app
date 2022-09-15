@@ -8,7 +8,7 @@ export class AppService {
 
   async getJoke(): Promise<Joke> {
     const response = await this.httpService.get(
-      'https://v2.jokeapi.dev/joke/Programing?blacklistFlags=nsfw,religious,political,racist,sexist,explicit,dark',
+      'https://v2.jokeapi.dev/joke/Programming',
       {
         headers: {
           accept: 'application/json',
