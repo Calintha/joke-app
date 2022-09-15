@@ -24,7 +24,7 @@ jobs:
   publish:
     runs-on: ubuntu-latest
 
-    needs: builds-test
+    needs: build-test
 
     name: ci
 
