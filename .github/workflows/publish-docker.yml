@@ -22,7 +22,7 @@ jobs:
         run: npm run build
   
   publish:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     needs: builds-test
 
@@ -30,7 +30,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
 
